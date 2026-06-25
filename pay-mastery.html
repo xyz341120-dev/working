@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pay Foundation</title>
+</head>
+
+<body style="background:#0b0f14;color:white;font-family:Arial;text-align:center;padding:100px">
+
+<h1>Pay £50</h1>
+
+<p>Send payment via Apple Pay / bank transfer to:</p>
+
+<h2> 0772385305 / rileyclay10101@icloud.com </h2>
+
+<p>Then click below:</p>
+
+<button onclick="paid()" style="padding:12px 20px;background:#d4af37;border:none;font-weight:bold;cursor:pointer">
+I Have Paid
+</button>
+
+<script>
+function paid(){
+const email = localStorage.getItem("email");
+
+window.location.href =
+"mailto:YOUR_EMAIL@stockshares.co.uk?subject=New Payment - Foundation&body=Customer Email: " + email;
+
+window.location.href="thankyou-mastery.html";
+}
+</script>
+
+</body>
+</html>

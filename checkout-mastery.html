@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mastery Checkout</title>
+<style>
+body{
+background:#0b0f14;
+color:white;
+font-family:Arial;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+background:#111827;
+padding:30px;
+border-radius:12px;
+width:350px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-top:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+width:100%;
+padding:12px;
+margin-top:10px;
+background:#d4af37;
+border:none;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h1>The Complete Alpha System</h1>
+<p>Mastery Course — £50</p>
+
+<input type="email" id="email" placeholder="Enter your email" required>
+
+<button onclick="go()">Continue</button>
+</div>
+
+<script>
+function go(){
+localStorage.setItem("email", document.getElementById("email").value);
+window.location.href="pay-mastery.html";
+}
+</script>
+
+</body>
+</html>
